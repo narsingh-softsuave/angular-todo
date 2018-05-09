@@ -1,0 +1,165 @@
+<div ng-controller="dashboardCtrl">
+
+    <div class="header">
+        <div class="header_contents container">
+            <div class="logo"><a href="#"><img src="../images/logo.png"></a></div>
+
+            <div class="user dropdown pull-right"><a href="#" class="">
+                <img src="../images/user.png" class="img-responsive" width="50"></a>
+                <div class="overlay dropbtn"><p class="text"></p></div>
+                <div class="dropdown-content">
+                    <a href="signin.html"> Log Out <i class="fa fa-sign-out" aria-hidden="true"></i></a>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="row boxes">
+
+                <div class="todo_button">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="button_list">
+                                    <ul>
+                                        <li><a href="" class="btn btn1" ng-click="selectAll()"><img
+                                                src="../images/select-all.png"> </a>
+                                            <span class="icon_text">Select All</span>
+                                        </li>
+                                        <li><a href="" class="btn btn2" ng-click="deSelectAll()"><img
+                                                src="../images/select.png"> </a>
+                                            <span class="icon_text">Deselect All</span>
+                                        </li>
+                                        <li>
+                                            <center><a href="" class="btn btn3" ng-click="removeArray()"><i
+                                                    class="fa fa-trash fa-2x"></i> </a></center>
+                                            <span class="icon_text"><center>Delete Selected</center></span>
+                                        </li>
+                                        <li><a class="btn btn4" data-toggle="modal" data-target="#myModal"><i
+                                                class="fa fa-plus-circle fa-2x " aria-hidden="true"></i></a>
+                                            <span class="icon_text">Create ToDo</span>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="todo_box">
+
+                        <center>
+                            <div class="col-md-12" ng-repeat="data in arr track by $index" ng-show="data.id">
+                                <div class="box textArray">
+
+                                    <table class="table table-no-border">
+                                        <tr class="todoList">
+                                            <td rowspan="2">
+                                                <div class="custom-checkbox"><input type="checkbox"
+                                                                                    id="{{'todo_'+$index}}"
+                                                                                    value="{{data.id}}"
+                                                                                    class="regular-checkbox big-checkbox checkboxtodo"
+                                                                                    name="checkboxtodo" /><label
+                                                        for="{{'todo_'+$index}}"></label></div>
+                                            </td>
+                                            <td><p class="box_title">Title: <span class="textArray title_small">{{data.title}}</span>
+                                            </p></td>
+                                            <td>
+                                                <div class="box_content">
+                                                    <p class="box_date"><span class="textArray">{{data.date}}</span></p>
+
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </table>
+
+
+                                </div>
+
+                            </div>
+                        </center>
+                        <div ng-if="arr.length <= 0" class="text-center">
+                            <h3 class="center_text">Please click the create button to create TODO's <i
+                                    class="fa fa-bell" aria-hidden="true"></i></h3>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Modal -->
+                <div class="modal fade addtodo_modal" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Create ToDo</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <label>Date :</label>
+                                    <input type="datetime-local" id="todoDateTime" name="todoDate" ng-model="todoDate"
+                                           placeholder="yyyy-MM-ddTHH:mm:ss" required/>
+                                    <span class="hidden-text pull-right" ng-if="isDate">Date is required</span>
+                                    <label>Title :</label>
+                                    <input type="text" ng-model="todoTitle">
+                                    <span class="hidden-text pull-right" ng-if="isTitle">Title is required</span>
+                                    <label>Desc : </label>
+                                    <textarea ng-model="todoDesc"></textarea>
+
+                                    <button class="btn save" ng-click="addValue()">Save</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="modal fade addtodo_modal" ng-repeat="data in arr track by $index" ng-show="data.id"
+                     id="{{'desc_modal_'+$index}}" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <div class="modal_title"><span class="textArray">{{data.title}}</span></div>
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal_date"><span class="textArray">{{data.date}}</span></div>
+                                <div class="modal_desc"><span class="textArray">{{data.desc}}</span></div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p class="copy">&copy; 2018. All rights reserved</p>
+        </div>
+
+
+    </div>
+
+
+</div>

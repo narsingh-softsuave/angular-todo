@@ -1,0 +1,34 @@
+<div class="body">
+<div class="container" >
+    <div class="signin center-div">
+        <h3 class="text-center">Sign in</h3>
+        <!--ng-app="userValidForm" --> 
+    <div class="row" ng-controller="UserValidFormCtrl">
+   <form action="">
+    <div class="form-group">
+    
+      <input type="email" class="form-control" ng-model="email" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+     
+      <input type="password" class="form-control" ng-model="pwd" id="pwd" placeholder="Enter password" name="pwd">
+        <div class="forgot text-center text-danger" ng-show="invalid">{{invalid}}</a>
+    
+       </div>
+    </div>
+   <center> <button type="submit" ng-click="signInValidation()" class="btn btn-default">Sign In</button></center>  
+
+  </form>
+ 
+   </div> 
+    </div>
+ </div>
+ </div>
+
+<div class="footer">
+    <div class="container">
+        <p class="copy">&copy; 2018. All rights reserved</p>
+    </div>
+
+
+</div>

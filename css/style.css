@@ -1,0 +1,628 @@
+/* Put your css in here */
+
+/*.btn {
+        border: 1px solid #3366FF;
+        background-color: #B3C6FF;
+        height:30px;
+}*/
+
+@font-face {
+    font-family: light;
+    src: url(../font/Typo_Round_Regular.ttf);
+}
+
+html{
+
+    height: 100%;
+}
+
+.txt{
+        color:red;
+}
+
+body{
+    background-color: #f3f9ff !important;
+     font-family: light !important;
+    height: 100%;
+
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+/* Put your css in here */
+
+/*.btn {
+        border: 1px solid #3366FF;
+        background-color: #B3C6FF;
+        height:30px;
+}*/
+
+
+
+/*style-2*/
+
+.txt{
+        color:red;
+}
+
+.body{
+    background: url(../images/bg_2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-family: light !important;
+    font-size: 16px;
+    height: 100%;
+
+}
+
+.view{
+    height:100%;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+.signin {
+    background-color: #ffffffc7;
+    padding: 70px 100px;
+    width: 65%;
+    align-content: center;
+    align-items: center;
+        border-radius: 0px !important;
+}
+
+
+.center-div
+{
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 3px;
+        margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.signin form input{
+    background-color: transparent;
+    border-bottom: 2px solid #6066c4;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    box-shadow: none;
+    border-radius: 0px;
+    background: transparent;
+    margin-top: 60px;
+      color: #7f387c;
+    font-size: 18px;
+ 
+}
+
+/*.signin form input::placeholder{
+   
+    background: -webkit-linear-gradient(#7f387c, #610751);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}*/
+
+
+.signin form input::placeholder{
+   font-size: 18px;
+ color: #6066c4;
+}
+
+
+.signin form input:focus, .signin form input:active{
+    box-shadow: none;
+    border-bottom: 2px solid #7f387c;
+}
+
+.signin.center-div h3 {
+    font-size: 45px;
+    font-weight: 600;
+    color: #5370d8;
+}
+
+.signin form button{
+    color: #fff;
+    background: linear-gradient(120deg, #5370d8, #7f387c);
+    padding: 15px 40px;
+    margin-top: 35px;
+    font-size: 20px;
+}
+
+.signin form button:hover{
+    color: #fff;
+    background: linear-gradient(150deg, #5370d8, #7f387c);
+}
+
+@font-face {
+    font-family: light;
+    src: url(../font/Typo_Round_Regular.ttf);
+}
+
+p, h1, h2, h3, h4, h5, h6{
+    font-family: light !important;
+}
+
+.forgot, .no_account{
+    padding-top: 20px;
+    color: #5370d8;
+}
+/*style-2*/
+
+.box {
+    /* border: 2px solid; */
+    margin-bottom: 10px;
+    background-color: #ffffff85;
+    border: 1px solid #dedede;
+    border-radius: 2px;
+        padding: 5px 10px;
+    width: 455px;
+    box-shadow: 0px 0px 7px 0px #d8d8d8;
+}
+
+
+.fa-close{
+    font-size: 18px;
+    float: right;
+    padding-right: 4px;
+}
+.textArray {
+  padding-left: 10px;
+}
+
+.todo_button button {
+    color: #fff;
+    background-color: #5f4aba;
+    border-radius: 2px;
+    display: inline-block;
+    width: 300px;
+    margin: 7px;
+    padding: 20px 5px;
+    line-height: 2px;
+        font-size: 32px;
+    margin-top: 50px;
+}
+
+.todo_button button i{
+    padding-right: 20px;
+}
+
+.addtodo_modal button.save {
+   background: rgb(43, 64, 138);
+     color: #fff;
+   
+    border-radius: 2px;
+    display: inline-block;
+    width: 150px;
+    padding: 20px 5px;
+    line-height: 2px;
+}
+
+
+
+.todo_button button:focus{
+    color: #fff;
+}
+
+.todo_button button:active{
+    color: #fff;
+}
+
+.todo_button button:hover, .addtodo_modal button.save:hover{
+    color: #fff;
+    background-color: #3e2f7d;
+}
+
+.addtodo_modal input{
+border-radius: 2px;
+}
+
+.addtodo_modal input, .addtodo_modal textarea {
+    width: 100%;
+    line-height: 25px;
+    margin: 7px 0px;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    line-height: 20px;
+    padding: 7px 10px;
+}
+
+.addtodo_modal label{
+    display: block;
+}
+
+.addtodo_modal button.save{
+    display: block;
+        margin: 10px 0px;
+    
+}
+
+.addtodo_modal form{
+    padding: 0 15%;
+}
+
+p.box_title {
+    font-size: 17px;
+    font-weight: 600;
+    color: #5f4aba;
+        text-align: left;
+        display: inline-block;
+        float: left;
+    padding-left: 20px;
+    
+     padding-top: 12px;
+    
+}
+
+.title_small {
+    font-size: 15px;
+    color: #7d7d7d;
+}
+.todo_button {
+    padding: 35px 0px;
+}
+
+
+.todo_box input[type=checkbox]{
+    padding: 5px;
+}
+
+
+.regular-checkbox + label { }
+
+
+
+.regular-checkbox {
+	display: none;
+}
+
+.regular-checkbox + label {
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+}
+
+.regular-checkbox + label:active, .regular-checkbox:checked + label:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.regular-checkbox:checked + label {
+    background-color: #ffffff;
+    border: 1px solid #3e2f7d;
+    color: #ffffff;
+}
+
+.regular-checkbox:checked + label:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #3e2f7d;
+}
+
+
+.big-checkbox + label {
+	padding: 18px;
+}
+
+.big-checkbox:checked + label:after {
+	font-size: 28px;
+	left: 6px;
+}
+
+.radio-1 {
+	width: 193px;
+}
+
+.button-holder {
+	float: left;
+}
+
+
+
+.custom-checkbox {
+    display: inline-block;
+        padding-top: 5px;
+    float: left;
+}
+
+.box_content {
+    padding-left: 10px;
+}
+
+
+p.box_date {
+    line-height: 18px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: right;
+    float: right;
+    display: block;
+        padding-top: 12px;
+}
+ p.box_desc {
+    line-height: 18px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: left;
+    display: block;
+         padding-left: 25px;
+}
+
+
+.logo img {
+   width: 125px;
+}
+
+.header {
+    background: linear-gradient(90deg, rgb(83, 112, 216), rgb(127, 56, 124));
+    padding:15px;
+}
+
+.content-wrapper{
+    padding-top: 50px;
+        min-height: 900px;
+}
+
+.footer {
+    background-color: #3e3e3e;
+}
+
+p.copy{
+    text-align: center;
+    color: #fff;
+    padding: 15px 5px;
+    margin-bottom: 0px;
+}
+
+.boxes{
+    padding-bottom: 30px;
+}
+
+span.hidden-text{
+    color: red;
+    text-align: right;
+    font-size: 12px;
+}
+
+.modal_title span {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+        color: #ffffff;
+}
+
+
+
+.logo a{
+        color: white;
+    font-size: 25px;
+    font-style: italic;
+}
+
+h3.center_text {
+    font-size: 18px;
+    padding-top: 100px;
+    color: #b5bbc1;
+}
+
+.modal_date span {
+    color: #7d7d7d;
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+.modal_desc span {
+    font-size: 14px;
+    line-height: 50px;
+    color: #7d7d7d;
+    text-transform: capitalize;
+}
+
+.user,.logo {
+    display: inline;
+}
+
+.header_contents.container {
+    width: 95%;
+}
+
+.button_list ul li {
+    list-style-type: none;
+    float: left;
+    padding: 0 20px;
+}
+
+
+
+.button_list ul li a {
+    background-color: #5f4aba;
+    border-radius: 50%;
+}
+
+.button_list ul li a {
+    background: linear-gradient(150deg, rgb(83, 112, 216), rgb(127, 56, 124));
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.button_list ul li a i {
+    padding: 0px 4px;
+}
+
+.button_list ul li a:hover, .button_list ul li a:focus {
+    background: linear-gradient(150deg, #7f387c, #5370d8);
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 16px;
+    color: #fff;
+}
+
+span.icon_text{
+    display: block;
+    padding-top: 20px;
+    color: #3e2f7d;
+    cursor: pointer;
+}
+
+.center-div {
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    margin: 90px auto;
+    border-radius: 3px;
+}
+.button_list ul{
+    padding: 30px 0 30px 28%;
+}
+
+/*.overlay {
+  position: ;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.user img:hover + .overlay {
+  opacity: 1;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}*/
+
+.todo_box table{
+    margin-bottom: 0px;
+}
+
+.table-no-border tr td{
+    border: none !important;
+}
+
+.modal-body {
+    position: relative;
+    padding: 15px;
+            background: #fff;
+}
+
+
+
+.modal-body label {
+    color: #fff;
+}
+
+.addtodo_modal input, .addtodo_modal textarea {
+    background-color: #76438f17;
+    color: #556cd2;
+    border: none;
+    border-bottom: 1px solid #546fd6;
+    /* border-radius: 0px; */
+}
+.modal-header, .modal-footer{
+         background: linear-gradient(150deg, rgb(85, 114, 218), rgb(199, 94, 195));
+}
+
+.modal-body label{
+    color: #79418a;
+        letter-spacing: 2px;
+        margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.modal-dialog{
+    width: 30% !important;
+}
+
+.modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+    color: #fff;
+    text-align: center;
+}
+
+
+.btn-default {
+    color: #fff !important;
+    background-color: #2b408a !important;
+    border-color: #2b408a !important;
+}
+
+.dropbtn {
+   display: none;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+    padding-top: 5px;
+    position: absolute;
+    background-color:#fff;
+    min-width: 135px;
+    right: 0px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.user.dropdown i{
+    padding-left: 20px;
+}
+
+.close {
+   
+    opacity: 1.2;
+}
